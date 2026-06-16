@@ -5,17 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch Mergington WebApp",
+      "name": "Depurar FastAPI app",
       "type": "debugpy",
       "request": "launch",
-      "module": "uvicorn",
-      "args": [
-        "src.app:app",
-        "--reload",
-        "--reload-include",
-        "src/static/*"
-      ],
-      "jinja": true
+      "program": "${workspaceFolder}/src/app.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
     }
   ]
 }
